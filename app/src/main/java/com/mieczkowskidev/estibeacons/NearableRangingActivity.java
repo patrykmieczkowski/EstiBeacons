@@ -13,6 +13,7 @@ public class NearableRangingActivity extends AppCompatActivity {
 
     private final static String TAG = NearableRangingActivity.class.getSimpleName();
     private BeaconManager beaconManager;
+    private String scanId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,5 +46,19 @@ public class NearableRangingActivity extends AppCompatActivity {
                 beaconManager.startNearableDiscovery();
             }
         });
+    }
+
+    @Override
+    protected void onStop() {
+        Log.d(TAG, "onStop() called with: " + "");
+        super.onStop();
+        beaconManager.stopNearableDiscovery(scanId);
+    }
+
+    @Override
+    protected void onDestroy() {
+        Log.d(TAG, "onDestroy() called with: " + "");
+        super.onDestroy();
+        beaconManager.disconnect();
     }
 }
