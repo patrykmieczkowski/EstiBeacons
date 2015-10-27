@@ -27,4 +27,13 @@
         android:layout_marginTop="25dp"
         android:text="@string/ranging" />
 
+    <Button
+        android:id="@+id/nearable_ranging_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ranging_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/nearable_ranging" />
+
 </RelativeLayout>

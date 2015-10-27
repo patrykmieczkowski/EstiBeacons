@@ -33,7 +33,7 @@ public class MonitoringActivity extends AppCompatActivity {
             @Override
             public void onServiceReady() {
                 Log.d(TAG, "onServiceReady() called with: " + "");
-                beaconManager.startMonitoring(new Region("region", UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), 52302, 11752));
+                beaconManager.startMonitoring(new Region("monitoring region", UUID.fromString("B9407F30-F5F8-466E-AFF9-25556B57FE6D"), 52302, 11752));
             }
         });
 

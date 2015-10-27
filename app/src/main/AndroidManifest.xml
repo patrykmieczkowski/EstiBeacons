@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".RangingActivity" >
         </activity>
+        <activity android:name=".NearableRangingActivity" >
+        </activity>
     </application>
 
 </manifest>
