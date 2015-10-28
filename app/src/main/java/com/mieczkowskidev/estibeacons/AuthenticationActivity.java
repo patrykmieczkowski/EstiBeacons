@@ -36,7 +36,7 @@ public class AuthenticationActivity extends AppCompatActivity {
 
                 Log.d(TAG, "temp: " + String.valueOf(beaconConnection.temperature().get()));
 
-                doSomeThings();
+//                doSomeThings();
 
             }
 
