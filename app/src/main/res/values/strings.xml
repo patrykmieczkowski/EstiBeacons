@@ -4,4 +4,5 @@
     <string name="monitoring">Monitoring</string>
     <string name="ranging">Ranging</string>
     <string name="nearable_ranging">Nearable Ranging</string>
+    <string name="authentication">Authentication</string>
 </resources>

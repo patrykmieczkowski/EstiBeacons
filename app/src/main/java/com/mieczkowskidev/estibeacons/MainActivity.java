@@ -10,7 +10,7 @@ public class MainActivity extends AppCompatActivity {
 
     private static final String TAG = MainActivity.class.getSimpleName();
 
-    private Button monitoringButton, rangingButton, nearableRangingButton;
+    private Button monitoringButton, rangingButton, nearableRangingButton, authenticationButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         monitoringButton = (Button) findViewById(R.id.monitoring_button);
         rangingButton = (Button) findViewById(R.id.ranging_button);
         nearableRangingButton = (Button) findViewById(R.id.nearable_ranging_button);
+        authenticationButton = (Button) findViewById(R.id.authentication_button);
 
         monitoringButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -45,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        authenticationButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, AuthenticationActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }

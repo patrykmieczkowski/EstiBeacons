@@ -36,4 +36,12 @@
         android:layout_marginTop="25dp"
         android:text="@string/nearable_ranging" />
 
+    <Button
+        android:id="@+id/authentication_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nearable_ranging_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/authentication" />
 </RelativeLayout>

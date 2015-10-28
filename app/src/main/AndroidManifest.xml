@@ -15,11 +15,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MonitoringActivity" >
+        <activity android:name=".MonitoringActivity"
+            android:label="@string/monitoring">
         </activity>
-        <activity android:name=".RangingActivity" >
+        <activity android:name=".RangingActivity"
+            android:label="@string/ranging">
         </activity>
-        <activity android:name=".NearableRangingActivity" >
+        <activity android:name=".NearableRangingActivity"
+            android:label="@string/nearable_ranging">
+        </activity>
+        <activity android:name=".AuthenticationActivity"
+            android:label="@string/authentication">
         </activity>
     </application>
 
